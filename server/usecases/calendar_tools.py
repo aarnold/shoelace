@@ -60,7 +60,7 @@ class CurrentTimeTool(BaseTool):
 
     def _run(self):
         # Return the current time in a format google calendar api can understand
-        return (datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%S.%fZ"),)
+        return (datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.%fZ"),)
 
     def _arun(self):
         raise NotImplementedError("convert_time does not support async")
@@ -99,7 +99,7 @@ Useful when you want to get a future time in an RFC3339 timestamp, given a time 
     ):
         # Return the current time in a format google calendar api can understand
         return (
-            datetime.now(datetime.UTC)
+            datetime.utcnow()
             + timedelta(
                 days=delta_days,
                 hours=delta_hours,

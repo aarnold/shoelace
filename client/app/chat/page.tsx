@@ -111,7 +111,7 @@ export default function Chat() {
             <header className="flex justify-between items-center p-4 bg-gray-800 text-white flex-shrink-0">
                 <div className="flex items-center">
                     <CalendarIcon className="h-8 w-8 text-white" />
-                    <h1 className="ml-2 text-2xl">Google Calendar Assistant</h1>
+                    <h1 className="ml-2 text-2xl">Shoelace</h1>
                 </div>
                 <div className="flex items-center p-4">
                     <CalendarDropdown
